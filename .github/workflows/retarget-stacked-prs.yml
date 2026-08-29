@@ -71,7 +71,7 @@ jobs:
       # checks pending forever on its new head.
       - name: Checkout
         if: steps.children.outputs.count != '0'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}

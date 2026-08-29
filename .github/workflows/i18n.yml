@@ -67,7 +67,7 @@ jobs:
       # in .git/config would be reachable by a lifecycle script on an unreviewed
       # branch, and this one can bypass main's protection. It is injected only
       # into the push and PR creation at the end.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       # Fail before any expensive step. The input ends up in pnpm --filter, in a

@@ -56,7 +56,7 @@ jobs:
       # the PR, which would leave required checks pending forever. Same reason
       # as dependabot-branch-auto-update.yml.
       - name: Checkout PR branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GH_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
