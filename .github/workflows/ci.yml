@@ -36,7 +36,7 @@ jobs:
       nw-paths: ${{ steps.detect.outputs.nw-paths }}
       nw-changed: ${{ steps.detect.outputs.nw-changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.3.0
@@ -172,7 +172,7 @@ jobs:
     if: needs.changed-packages.outputs.any == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.3.0
         with:
           version: ${{ env.PNPM_VERSION }}
@@ -200,7 +200,7 @@ jobs:
     env:
       PKG: ${{ matrix.package }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.3.0
         with:
           version: ${{ env.PNPM_VERSION }}
@@ -240,7 +240,7 @@ jobs:
     env:
       PKG: ${{ matrix.package }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # 2.37.1
         with:
           php-version: '8.3'
@@ -272,7 +272,7 @@ jobs:
     if: needs.changed-packages.outputs.nw-changed == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # 2.37.1
         with:
           php-version: '8.3'
@@ -319,7 +319,7 @@ jobs:
       WP_CORE_DIR: /tmp/wordpress
       PKG: ${{ matrix.package }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # 2.37.1
         with:
           php-version: '8.3'
@@ -487,7 +487,7 @@ jobs:
     env:
       PKG: ${{ matrix.package }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
@@ -573,7 +573,7 @@ jobs:
     # package, so a tooling-only PR would otherwise run nothing at all.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: bin/tests
         run: |
           shopt -s nullglob
