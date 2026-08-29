@@ -532,7 +532,7 @@ jobs:
       # job-index keeps the staging artifact name valid: matrix package names
       # like `@automattic/newspack-blocks` contain characters artifacts reject.
       - name: Stage built ZIPs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: branch-zips-staging-${{ strategy.job-index }}
           path: branch-zips/
@@ -559,7 +559,7 @@ jobs:
           find staging -name '*.zip' -exec cp {} bundle/ \; 2>/dev/null || true
           ls -la bundle 2>/dev/null || true
       - name: Upload branch bundle
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: newspack-branch-zips
           path: bundle/*.zip
