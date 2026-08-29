@@ -1,4 +1,4 @@
-# newspack-workspace
+# newspack-workspace 
 
 [![CI](https://github.com/Automattic/newspack-workspace/actions/workflows/ci.yml/badge.svg)](https://github.com/Automattic/newspack-workspace/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/Automattic/newspack-workspace)](LICENSE)
