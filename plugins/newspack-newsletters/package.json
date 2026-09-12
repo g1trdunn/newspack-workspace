@@ -47,7 +47,7 @@
 		"mjml-browser": "^4.18.0",
 		"newspack-components": "workspace:*",
 		"newspack-icons": "workspace:*",
-		"qs": "^6.15.2"
+		"qs": "^6.16.0"
 	},
 	"devDependencies": {
 		"@wordpress/dataviews": "^16.0.0",
