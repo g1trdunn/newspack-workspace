@@ -50,7 +50,7 @@
 		"@wordpress/primitives": "^3.0.0",
 		"@wordpress/url": "^4.48.0",
 		"chokidar": "^3.6.0",
-		"commitizen": "^4.3.1",
+		"commitizen": "^4.3.2",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.1",
 		"husky": "^9.1.7",
